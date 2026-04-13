@@ -21,6 +21,12 @@ O foco principal é a comunicação em tempo real e a integração entre o servi
 - Wishlist: listas de cartas da pokedex de um jogador de interesse.
 - Autenticação: Login e Registro.
 
+## Arquitetura
+Esta aplicação atua como um orquestrador de informações entre diferentes serviços:
+    a) Aplicação 1 (Jogadores): Consumida para validar a identidade do usuário e permissões de troca.
+    b) Aplicação 3 (Trocas): Consumida para persistir os dados das propostas, buscar o histórico e enviar as notificações de sistema.
+    c) PokéAPI: Utilizada para renderizar visualmente as cartas que estão sendo negociadas.
+    
 ## Fluxo
 
 ## Diagrama de Casos de Uso
