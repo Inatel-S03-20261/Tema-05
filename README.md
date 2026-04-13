@@ -42,6 +42,9 @@ Esta aplicação atua como um orquestrador de informações entre diferentes ser
 
 ## Diagrama de Classes
 
-## Tecnologias e Frameworks
-
+## Tecnologias e Frameworks (Ainda a decidir)
+- Frontend: React / Next.js (para interfaces dinâmicas).
+- Comunicação: Axios / Fetch API para consumo dos microserviços.
+- Estilização: Tailwind CSS (alinhado aos padrões do projeto DevHub).
+- Testes: Cypress (E2E para fluxos de aceite de troca).
 
