@@ -23,9 +23,9 @@ O foco principal é a comunicação em tempo real e a integração entre o servi
 
 ## Arquitetura
 Esta aplicação atua como um orquestrador de informações entre diferentes serviços:
-    - Aplicação 1 (Jogadores): Consumida para validar a identidade do usuário e permissões de troca.
-    - Aplicação 3 (Trocas): Consumida para persistir os dados das propostas, buscar o histórico e enviar as notificações de sistema.
-    - PokéAPI: Utilizada para renderizar visualmente as cartas que estão sendo negociadas.
+- Aplicação 1 (Jogadores): Consumida para validar a identidade do usuário e permissões de troca.
+- Aplicação 3 (Trocas): Consumida para persistir os dados das propostas, buscar o histórico e enviar as notificações de sistema.
+- PokéAPI: Utilizada para renderizar visualmente as cartas que estão sendo negociadas.
     
 ## Fluxo
 1. O Jogador A escolhe um Pokémon e envia para o serviço de Trocas.
