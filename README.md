@@ -39,7 +39,7 @@ Esta aplicação atua como um orquestrador de informações entre diferentes ser
 5. Ao aceitar, a aplicação comunica os serviços responsáveis para atualizar a posse das cartas.
 
 ## Diagrama de Casos de Uso
-
+<img src="./Diagramas/Diagrama de Casos Uso-SPA-SOLID-Wishlist.drawio.svg" width="800" alt="Diagrama de Casos de Uso">
 ## Diagrama de Classes
 
 ## Tecnologias e Frameworks (Ainda a decidir)
