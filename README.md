@@ -45,8 +45,8 @@ Esta aplicação atua como um orquestrador de informações entre diferentes ser
 <img src="./Diagramas/Diagrama de Classes-SPA-SOLID-Wishlist.drawio.svg" width="800" alt="Diagrama de Casos de Uso">
 
 ## Tecnologias e Frameworks (Ainda a decidir)
-- Frontend: React / Next.js (para interfaces dinâmicas).
+- Frontend: HTML5, JavaScript (para interfaces).
 - Comunicação: Axios / Fetch API para consumo dos microserviços.
-- Estilização: Tailwind CSS (alinhado aos padrões do projeto DevHub).
+- Estilização: CSS).
 - Testes: Cypress (E2E para fluxos de aceite de troca).
 
