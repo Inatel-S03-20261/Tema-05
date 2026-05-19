@@ -1,0 +1,14 @@
+{
+  "name": "tema05-root",
+  "private": true,
+  "workspaces": [
+    "Tema05Codigo"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace Tema05Codigo",
+    "build": "npm run build --workspace Tema05Codigo",
+    "preview": "npm run preview --workspace Tema05Codigo",
+    "test:e2e": "npm run test:e2e --workspace Tema05Codigo",
+    "test:e2e:open": "npm run test:e2e:open --workspace Tema05Codigo"
+  }
+}
