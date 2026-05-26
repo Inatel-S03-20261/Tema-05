@@ -48,3 +48,6 @@ Esta aplicação atua como um orquestrador de informações entre diferentes ser
 - Estilização: Tailwind CSS (alinhado aos padrões do projeto DevHub).
 - Testes: Cypress (E2E para fluxos de aceite de troca).
 
+cd Tema05Codigo
+npm install
+npm run dev
