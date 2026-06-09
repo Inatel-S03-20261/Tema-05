@@ -48,7 +48,7 @@ Esta aplicação atua como um orquestrador de informações entre diferentes ser
 ## Diagrama de Classes
 <img src="./Apresentação3/Diagrama Atualizado/DiagramaClasses.drawio.svg" width="800" alt="Diagrama de Classes">
 
-## Tecnologias e Frameworks (Ainda a decidir)
+## Tecnologias e Frameworks 
 - Frontend: React, JavaScript (para interfaces).
 - Estilização: CSS.
 
