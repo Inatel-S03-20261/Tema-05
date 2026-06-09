@@ -43,13 +43,13 @@ Esta aplicação atua como um orquestrador de informações entre diferentes ser
 <img src="./Apresentação3/Wireframe/wireframe_svg.svg" width="800" alt="Wireframe">
 
 ## Diagrama de Casos de Uso
-<img src="./Diagramas/Diagrama de Casos Uso-SPA-SOLID-Wishlist.drawio.svg" width="800" alt="Diagrama de Casos de Uso">
+<img src="./Apresentação3/Diagrama Atualizado/DiagramaCasosDeUso.drawio.svg" width="800" alt="Diagrama de Casos de Uso">
 
 ## Diagrama de Classes
-<img src="./Diagramas/Diagrama de Classes-SPA-SOLID-Wishlist.drawio.svg" width="800" alt="Diagrama de Casos de Uso">
+<img src="./Apresentação3/Diagrama Atualizado/DiagramaClasses.drawio.svg" width="800" alt="Diagrama de Classes">
 
 ## Tecnologias e Frameworks (Ainda a decidir)
 - Frontend: React, JavaScript (para interfaces).
 - Estilização: CSS.
-- Testes: Cypress (E2E para fluxos de aceite de troca).
+
 
