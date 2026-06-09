@@ -38,6 +38,10 @@ Esta aplicação atua como um orquestrador de informações entre diferentes ser
 
 5. Ao aceitar, a aplicação comunica os serviços responsáveis para atualizar a posse das cartas.
 
+
+## Wireframe
+<img src="./Apresentação3/Wireframe/wireframe_svg.svg" width="800" alt="Wireframe">
+
 ## Diagrama de Casos de Uso
 <img src="./Diagramas/Diagrama de Casos Uso-SPA-SOLID-Wishlist.drawio.svg" width="800" alt="Diagrama de Casos de Uso">
 
