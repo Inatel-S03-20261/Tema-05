@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  color-scheme: light;
+  --bg-main: #f5f8fc;
+  --bg-soft: #e8f0fa;
+  --bg-blue: #dbe9f8;
+  --card-surface: rgba(255, 255, 255, 0.92);
+  --card-border: rgba(23, 55, 94, 0.12);
+  --card-stroke: rgba(54, 110, 176, 0.28);
+  --text-main: #18324d;
+  --text-muted: #5e738c;
+  --accent: #2b6cb0;
+  --accent-strong: #174a7a;
+  --accent-soft: #edf4fb;
+  --success: #1d7d46;
+  --danger: #c64242;
+  --shadow-lg: 0 20px 48px rgba(21, 55, 91, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--text-main);
+  background:
+    linear-gradient(180deg, rgba(219, 233, 248, 0.62), rgba(245, 248, 252, 0.96)),
+    linear-gradient(135deg, var(--bg-main) 0%, var(--bg-soft) 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+a,
+button {
+  color: inherit;
+}

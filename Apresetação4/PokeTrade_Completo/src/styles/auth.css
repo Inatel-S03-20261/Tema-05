@@ -1,0 +1,386 @@
+.auth-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.scene-gradient,
+.scene-grid,
+.scene-wave,
+.scene-outline,
+.scene-pokemon {
+  position: absolute;
+  pointer-events: none;
+}
+
+.scene-gradient {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  filter: blur(18px);
+  opacity: 0.45;
+}
+
+.scene-gradient-blue {
+  top: -10rem;
+  right: -8rem;
+  background: rgba(43, 108, 176, 0.12);
+}
+
+.scene-gradient-sky {
+  bottom: -12rem;
+  left: -8rem;
+  background: rgba(114, 176, 227, 0.14);
+}
+
+.scene-grid {
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(24, 50, 77, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 50, 77, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.28), transparent 90%);
+}
+
+.scene-wave {
+  width: 42rem;
+  height: 42rem;
+  border-radius: 50%;
+  border: 1px solid rgba(43, 108, 176, 0.05);
+}
+
+.scene-wave-top {
+  top: -20rem;
+  left: -12rem;
+}
+
+.scene-wave-bottom {
+  right: -18rem;
+  bottom: -24rem;
+}
+
+.scene-outline {
+  width: 24rem;
+  height: 10rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(43, 108, 176, 0.05);
+  transform: rotate(-10deg);
+}
+
+.scene-outline-left {
+  left: -6rem;
+  top: 24%;
+}
+
+.scene-outline-right {
+  right: -6rem;
+  bottom: 14%;
+}
+
+.scene-pokemon {
+  opacity: 0.045;
+  filter: grayscale(0.15);
+}
+
+.pokemon-pikachu {
+  top: 9%;
+  left: 6%;
+  width: 9rem;
+}
+
+.pokemon-squirtle {
+  right: 8%;
+  top: 18%;
+  width: 10rem;
+}
+
+.pokemon-bulbasaur {
+  left: 14%;
+  bottom: 10%;
+  width: 9rem;
+}
+
+.pokemon-charmander {
+  right: 12%;
+  bottom: 8%;
+  width: 9.6rem;
+}
+
+.auth-layout {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  min-height: calc(100vh - 64px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(280px, 1.1fr) minmax(320px, 430px);
+  gap: 36px;
+  align-items: center;
+}
+
+.auth-layout-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.brand-mark-centered {
+  justify-content: center;
+}
+
+.brand-mark-dot {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #e95a5a 0 48%, #ffffff 48% 100%);
+  box-shadow: inset 0 0 0 0.13rem #18324d;
+}
+
+.auth-card {
+  padding: 28px;
+  border-radius: 22px;
+  background: var(--card-surface);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(8px);
+}
+
+.auth-card-centered {
+  width: min(100%, 420px);
+}
+
+.auth-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.auth-card-top-centered {
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.mode-switch,
+.text-link {
+  padding: 0;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.mode-switch {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mode-selector {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: #eef3f8;
+  border: 1px solid rgba(23, 55, 94, 0.08);
+}
+
+.mode-option {
+  min-width: 104px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mode-option-active {
+  background: #ffffff;
+  color: var(--accent-strong);
+  box-shadow: 0 4px 10px rgba(23, 55, 94, 0.08);
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+}
+
+.field-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  color: #284867;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(23, 55, 94, 0.12);
+  background: #fbfdff;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.auth-form input::placeholder {
+  color: #8ca0b4;
+}
+
+.auth-form input:focus {
+  border-color: var(--card-stroke);
+  box-shadow: 0 0 0 4px rgba(43, 108, 176, 0.08);
+  background: #ffffff;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+}
+
+.checkbox-row input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.primary-button {
+  margin-top: 4px;
+  padding: 15px 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  color: #f8fbff;
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  box-shadow: 0 14px 24px rgba(23, 74, 122, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 28px rgba(23, 74, 122, 0.2);
+}
+
+.feedback-message {
+  margin: 16px 0 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  line-height: 1.6;
+}
+
+.feedback-success {
+  background: rgba(29, 125, 70, 0.08);
+  border: 1px solid rgba(29, 125, 70, 0.14);
+  color: var(--success);
+}
+
+.feedback-error {
+  background: rgba(198, 66, 66, 0.08);
+  border: 1px solid rgba(198, 66, 66, 0.14);
+  color: var(--danger);
+}
+
+.auth-card-footer {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 18px;
+  color: var(--text-muted);
+}
+
+.auth-card-footer-centered {
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .auth-layout {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .auth-page {
+    padding: 16px;
+  }
+
+  .auth-layout {
+    min-height: auto;
+    gap: 20px;
+  }
+
+  .hero-panel {
+    padding: 0;
+  }
+
+  .hero-panel h1 {
+    font-size: clamp(2.4rem, 11vw, 3.6rem);
+  }
+
+  .auth-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .auth-card-top,
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .field-group {
+    grid-template-columns: 1fr;
+  }
+
+  .scene-outline-right,
+  .pokemon-charmander,
+  .pokemon-squirtle {
+    opacity: 0.05;
+  }
+}
